@@ -29,26 +29,20 @@
       <file leaf-file-name="StudentPortal.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StudentPortal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38799572" vertical-offset="1186" max-vertical-offset="2664">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            <state vertical-scroll-proportion="1.7145214" vertical-offset="814" max-vertical-offset="3451">
+              <caret line="109" column="53" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1425568843583" expanded="true" signature="3449:3492" placeholder="SELECT * FRO..StudentsFollowing..." />
-                <marker date="1425568843583" expanded="true" signature="4099:4139" placeholder="SELECT * FRO..FinishedCourses..." />
-                <marker date="1425568843583" expanded="true" signature="4099:4140" placeholder="SELECT * FRO..FinishedCourses..." />
-                <marker date="1425568843583" expanded="true" signature="4598:4632" placeholder="SELECT * FRO..Registrations..." />
-                <marker date="1425568843583" expanded="true" signature="4598:4641" placeholder="SELECT * FRO..Registrations..." />
-                <marker date="1425568843583" expanded="true" signature="4598:4642" placeholder="SELECT * FRO..Registrations..." />
-                <marker date="1425568843583" expanded="true" signature="5126:5182" placeholder="SELECT prior..CourseQueuePosition..." />
-                <marker date="1425568843583" expanded="true" signature="5126:5183" placeholder="SELECT prior..CourseQueuePosition..." />
-                <marker date="1425568843583" expanded="true" signature="5126:5212" placeholder="SELECT prior..CourseQueuePosition..." />
-                <marker date="1425568843583" expanded="true" signature="5126:5213" placeholder="SELECT prior..CourseQueuePosition..." />
-                <marker date="1425568843583" expanded="true" signature="5126:5226" placeholder="SELECT prior..CourseQueuePosition..." />
-                <marker date="1425568843583" expanded="true" signature="5483:5522" placeholder="SELECT * FRO..PathToGraduation..." />
-                <marker date="1425568843583" expanded="true" signature="5483:5524" placeholder="SELECT * FRO..PathToGraduation..." />
-                <marker date="1425568843583" expanded="true" signature="5483:5525" placeholder="SELECT * FRO..PathToGraduation..." />
-                <marker date="1425568843583" expanded="true" signature="6410:6474" placeholder="INSERT INTO ..." />
-                <marker date="1425568843583" expanded="true" signature="6514:6597" placeholder="INSERT INTO ..." />
+                <element signature="e#4912#4930#0" expanded="true" />
+                <marker date="1425829982903" expanded="true" signature="3569:3612" placeholder="SELECT * FRO..StudentsFollowing..." />
+                <marker date="1425829982903" expanded="true" signature="4219:4260" placeholder="SELECT * FRO..FinishedCourses..." />
+                <marker date="1425829982903" expanded="true" signature="4718:4762" placeholder="SELECT * FRO..Registrations..." />
+                <marker date="1425829982903" expanded="true" signature="5519:5561" placeholder="SELECT * FRO..PathToGraduation..." />
+                <marker date="1425829982903" expanded="true" signature="6306:6423" placeholder="SELECT prior..CourseQueuePosition..." />
+                <marker date="1425829982903" expanded="true" signature="6942:7025" placeholder="INSERT INTO ..." />
+                <marker date="1425829982903" expanded="true" signature="7085:7171" placeholder="SELECT * FRO..WaitingFor..." />
+                <marker date="1425829982903" expanded="true" signature="8065:8137" placeholder="DELETE FROM ..." />
+                <marker date="1425829982903" expanded="true" signature="8719:8772" placeholder="SELECT name ..Course..." />
               </folding>
             </state>
           </provider>
@@ -67,8 +61,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1061" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -95,7 +91,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,6 +102,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -118,7 +114,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ojdbc5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -264,6 +260,7 @@
       <node-options />
       <gulpfile />
       <tasks />
+      <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
@@ -357,9 +354,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <method />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -402,6 +396,11 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -414,19 +413,21 @@
       <workItem from="1425562001987" duration="6251000" />
       <workItem from="1425569759855" duration="611000" />
       <workItem from="1425723564918" duration="384000" />
+      <workItem from="1425826011226" duration="3978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7246000" />
+    <option name="totallyTimeSpent" value="11224000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1061" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,22 +435,21 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33122364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22698745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3319672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -471,7 +471,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -482,26 +482,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/StudentPortal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2664">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2516">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1425568843583" expanded="true" signature="3449:3492" placeholder="SELECT * FRO..StudentsFollowing..." />
-            <marker date="1425568843583" expanded="true" signature="4099:4139" placeholder="SELECT * FRO..FinishedCourses..." />
-            <marker date="1425568843583" expanded="true" signature="4099:4140" placeholder="SELECT * FRO..FinishedCourses..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4632" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4641" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4642" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5182" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5183" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5212" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5213" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5226" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5522" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5524" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5525" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="6410:6474" placeholder="INSERT INTO ..." />
-            <marker date="1425568843583" expanded="true" signature="6514:6597" placeholder="INSERT INTO ..." />
+            <element signature="e#4912#4930#0" expanded="true" />
+            <marker date="1425829982903" expanded="true" signature="3569:3612" placeholder="SELECT * FRO..StudentsFollowing..." />
+            <marker date="1425829982903" expanded="true" signature="4219:4260" placeholder="SELECT * FRO..FinishedCourses..." />
+            <marker date="1425829982903" expanded="true" signature="4718:4762" placeholder="SELECT * FRO..Registrations..." />
+            <marker date="1425829982903" expanded="true" signature="5519:5561" placeholder="SELECT * FRO..PathToGraduation..." />
+            <marker date="1425829982903" expanded="true" signature="6306:6423" placeholder="SELECT prior..CourseQueuePosition..." />
+            <marker date="1425829982903" expanded="true" signature="6942:7025" placeholder="INSERT INTO ..." />
+            <marker date="1425829982903" expanded="true" signature="7085:7171" placeholder="SELECT * FRO..WaitingFor..." />
+            <marker date="1425829982903" expanded="true" signature="8065:8137" placeholder="DELETE FROM ..." />
+            <marker date="1425829982903" expanded="true" signature="8719:8772" placeholder="SELECT name ..Course..." />
           </folding>
         </state>
       </provider>
@@ -512,48 +506,56 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1425568843583" expanded="true" signature="3449:3492" placeholder="SELECT * FRO..StudentsFollowing..." />
-            <marker date="1425568843583" expanded="true" signature="4099:4139" placeholder="SELECT * FRO..FinishedCourses..." />
-            <marker date="1425568843583" expanded="true" signature="4099:4140" placeholder="SELECT * FRO..FinishedCourses..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4632" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4641" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4642" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5182" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5183" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5212" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5213" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5226" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5522" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5524" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5525" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="6410:6474" placeholder="INSERT INTO ..." />
-            <marker date="1425568843583" expanded="true" signature="6514:6597" placeholder="INSERT INTO ..." />
+            <element signature="e#4912#4930#0" expanded="true" />
+            <marker date="1425829982903" expanded="true" signature="3569:3612" placeholder="SELECT * FRO..StudentsFollowing..." />
+            <marker date="1425829982903" expanded="true" signature="4219:4260" placeholder="SELECT * FRO..FinishedCourses..." />
+            <marker date="1425829982903" expanded="true" signature="4718:4762" placeholder="SELECT * FRO..Registrations..." />
+            <marker date="1425829982903" expanded="true" signature="5519:5561" placeholder="SELECT * FRO..PathToGraduation..." />
+            <marker date="1425829982903" expanded="true" signature="6306:6423" placeholder="SELECT prior..CourseQueuePosition..." />
+            <marker date="1425829982903" expanded="true" signature="6942:7025" placeholder="INSERT INTO ..." />
+            <marker date="1425829982903" expanded="true" signature="7085:7171" placeholder="SELECT * FRO..WaitingFor..." />
+            <marker date="1425829982903" expanded="true" signature="8065:8137" placeholder="DELETE FROM ..." />
+            <marker date="1425829982903" expanded="true" signature="8719:8772" placeholder="SELECT name ..Course..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentPortal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38799572" vertical-offset="1186" max-vertical-offset="2664">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2664">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1425568843583" expanded="true" signature="3449:3492" placeholder="SELECT * FRO..StudentsFollowing..." />
-            <marker date="1425568843583" expanded="true" signature="4099:4139" placeholder="SELECT * FRO..FinishedCourses..." />
-            <marker date="1425568843583" expanded="true" signature="4099:4140" placeholder="SELECT * FRO..FinishedCourses..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4632" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4641" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="4598:4642" placeholder="SELECT * FRO..Registrations..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5182" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5183" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5212" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5213" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5126:5226" placeholder="SELECT prior..CourseQueuePosition..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5522" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5524" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="5483:5525" placeholder="SELECT * FRO..PathToGraduation..." />
-            <marker date="1425568843583" expanded="true" signature="6410:6474" placeholder="INSERT INTO ..." />
-            <marker date="1425568843583" expanded="true" signature="6514:6597" placeholder="INSERT INTO ..." />
+            <element signature="e#4912#4930#0" expanded="true" />
+            <marker date="1425829982903" expanded="true" signature="3569:3612" placeholder="SELECT * FRO..StudentsFollowing..." />
+            <marker date="1425829982903" expanded="true" signature="4219:4260" placeholder="SELECT * FRO..FinishedCourses..." />
+            <marker date="1425829982903" expanded="true" signature="4718:4762" placeholder="SELECT * FRO..Registrations..." />
+            <marker date="1425829982903" expanded="true" signature="5519:5561" placeholder="SELECT * FRO..PathToGraduation..." />
+            <marker date="1425829982903" expanded="true" signature="6306:6423" placeholder="SELECT prior..CourseQueuePosition..." />
+            <marker date="1425829982903" expanded="true" signature="6942:7025" placeholder="INSERT INTO ..." />
+            <marker date="1425829982903" expanded="true" signature="7085:7171" placeholder="SELECT * FRO..WaitingFor..." />
+            <marker date="1425829982903" expanded="true" signature="8065:8137" placeholder="DELETE FROM ..." />
+            <marker date="1425829982903" expanded="true" signature="8719:8772" placeholder="SELECT name ..Course..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentPortal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7145214" vertical-offset="814" max-vertical-offset="3451">
+          <caret line="109" column="53" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4912#4930#0" expanded="true" />
+            <marker date="1425829982903" expanded="true" signature="3569:3612" placeholder="SELECT * FRO..StudentsFollowing..." />
+            <marker date="1425829982903" expanded="true" signature="4219:4260" placeholder="SELECT * FRO..FinishedCourses..." />
+            <marker date="1425829982903" expanded="true" signature="4718:4762" placeholder="SELECT * FRO..Registrations..." />
+            <marker date="1425829982903" expanded="true" signature="5519:5561" placeholder="SELECT * FRO..PathToGraduation..." />
+            <marker date="1425829982903" expanded="true" signature="6306:6423" placeholder="SELECT prior..CourseQueuePosition..." />
+            <marker date="1425829982903" expanded="true" signature="6942:7025" placeholder="INSERT INTO ..." />
+            <marker date="1425829982903" expanded="true" signature="7085:7171" placeholder="SELECT * FRO..WaitingFor..." />
+            <marker date="1425829982903" expanded="true" signature="8065:8137" placeholder="DELETE FROM ..." />
+            <marker date="1425829982903" expanded="true" signature="8719:8772" placeholder="SELECT name ..Course..." />
           </folding>
         </state>
       </provider>
@@ -615,6 +617,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

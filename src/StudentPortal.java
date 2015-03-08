@@ -2,9 +2,13 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.sql.*; // JDBC stuff.
 import java.io.*;  // Reading user input.
+import java.util.ArrayList;
+import java.util.List;
 
 public class StudentPortal
 {
+    private static final int ERROR_NOT_ALLOWED_TO_REGISTER = 20000;
+
     /* This is the driving engine of the program. It parses the
      * command-line arguments and calls the appropriate methods in
      * the other classes.
@@ -93,16 +97,17 @@ public class StudentPortal
 
             ResultSet registration = statement.executeQuery("SELECT * FROM Registrations WHERE student = " + student);
             builder.append("\nRegistered courses (name (code): status):\n");
+
+            List<RegisteredCourse> courses = new ArrayList<RegisteredCourse>();
+
             while(registration.next()) {
-                String status = registration.getString("status");
-                String code = registration.getString("course");
-                builder.append("\t" + registration.getString("coursename") + " (" + code + "): " + status);
+                RegisteredCourse registeredCourse = new RegisteredCourse(registration.getString("course"), registration.getString("coursename"), registration.getString("status"));
+                courses.add(registeredCourse);
+                builder.append("\t" + registeredCourse);
 
 
-                if(status.equals("waiting")) {
-                    ResultSet QueuePos = statement.executeQuery("SELECT priority FROM CourseQueuePosition WHERE student = " + student + " AND course = '" + code + "'");
-                    QueuePos.next();
-                    builder.append(" as nr " + QueuePos.getString("priority"));
+                if(registeredCourse.status.equals("waiting")) {
+                    builder.append(" as nr " + student);
                 }
                 builder.append("\n");
             }
@@ -114,7 +119,16 @@ public class StudentPortal
                     .append("Research credits taken: " + pathToGraduation.getString("passedcredits") + "\n")
                     .append("Fullfils the requirements for graduation: " + pathToGraduation.getString("cangraduate") + "\n");
 
-            System.out.println(builder);
+
+            String resultString = builder.toString();
+            for(RegisteredCourse registeredCourse : courses) {
+                if (registeredCourse.status.equals("waiting")) {
+                    ResultSet QueuePos = statement.executeQuery("SELECT priority FROM CourseQueuePosition WHERE student = " + student + " AND course = '" + registeredCourse.code + "'");
+                    QueuePos.next();
+                    resultString = resultString.replace("as nr " + student, "as nr " + QueuePos.getString("priority"));
+                }
+            }
+            System.out.println(resultString);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -122,22 +136,65 @@ public class StudentPortal
 
     static void registerStudent(Connection conn, String student, String course)
     {
-        System.out.println(student);
-        System.out.println(course);
         try {
-            Statement myStmt = conn.createStatement();
-            myStmt.executeUpdate("INSERT INTO Registrations(course, student) VALUES ('ABC123', 12)");
-            //myStmt.executeUpdate("INSERT INTO Registrations(course, student) VALUES('" + course + "'," + student + ")");
+            Statement statement = conn.createStatement();
+            statement.executeUpdate("INSERT INTO Registrations(course, student) VALUES('" + course + "'," + student + ")");
+
+            ResultSet result = statement.executeQuery("SELECT * FROM WaitingFor WHERE student = " + student + " AND course = '" + course + "'");
+            if(result.next()) { //User is queued to a course.
+                System.out.println("Course " + course + " '" + getCourseName(conn, course) + "' is full, you are put in the waiting list as number " + result.getString("priority"));
+            } else {
+                System.out.println("Successfully registered to course " + course + " '" + getCourseName(conn, course) + "'");
+            }
         } catch (SQLException e) {
-            e.printStackTrace();
+           if(e.getErrorCode() == ERROR_NOT_ALLOWED_TO_REGISTER) {
+               System.out.println("You are not allowed to register to that course");
+           } else {
+               e.printStackTrace();
+           }
         }
 
-
-        // Your implementation here
     }
 
     static void unregisterStudent(Connection conn, String student, String course)
     {
-        // Your implementation here
+        try {
+            Statement statement = conn.createStatement();
+            int success = statement.executeUpdate("DELETE FROM registrations WHERE course = '" + course + "' AND student = " + student);
+            if(success == 1) {
+                System.out.println("You were successfully unregistered from the course " + course + " '" + getCourseName(conn, course) + "'");
+            } else {
+                System.out.println("You are not registered to that course");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
+
+    private static String getCourseName(Connection conn, String course) throws SQLException {
+        Statement statement = conn.createStatement();
+        ResultSet name = statement.executeQuery("SELECT name FROM Course WHERE code = '" + course + "'");
+        name.next();
+        return name.getString("name");
+    }
+
+    /**
+     * Data class for a registered course;
+     */
+    private static class RegisteredCourse {
+        public final String code;
+        public final String name;
+        public final String status;
+
+        public RegisteredCourse(String code, String name, String status) {
+            this.code = code;
+            this.name = name;
+            this.status = status;
+        }
+
+        public String toString() {
+            return new String(name + " (" + code + "): " + status);
+        }
+    }
+
 }
